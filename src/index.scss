@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tabControl {
+  position: relative;
+  display: flex;
+  background-color: #f1f3f4;
+
+  span {
+    line-height: 3;
+    color: #8b929d;
+    cursor: pointer;
+    z-index: 2;
+    flex-basis: 25%;
+    text-align: center;
+
+    &:hover {
+      color: black;
+    }
+
+    &.selected {
+      color: black;
+    }
+  }
+
+  .indicator {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background-color: #1565c0;
+    transition: all 0.5s;
+  }
+}
+
+.expandAll{
+  text-align: right;
+  
+  button{
+    border: 0;
+    background: none;
+    font-size: 20px; 
+    margin-top: 10px;   
+    &:hover{
+      color: #1565c0;
+      cursor: pointer;
+    }
+  }
+  
+}
